@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <!--
+  Многострочный комментарий 
+  на самом верху
+-->
+  || Однострочный комментарий о конфигурации
+
+  <constants>
+    <const name="SIZE">96</const>
+    <const name="GREETING">[[Привет, мир!]]</const>
+    <const name="EMPTY_STR">[[]]</const>
+    <const name="NESTED_DICT">
+      dict(
+        outer = dict(
+          inner = dict(
+            val1 = 1,
+            val2 = [[тест]]
+          )
+        )
+      )
+    </const>
+  </constants>
+
+  <dicts>
+    <dict name="mydict">
+      <item key="a">1</item>
+      <item key="b">2</item>
+      || комментарий внутри словаря
+      <item key="greet">[[Здравствуйте]]</item>
+    </dict>
+    <dict name="complex_dict">
+      <item key="str_val">[[тут строка]]</item>
+      <item key="num_val">42</item>
+      <item key="nested">
+        dict(
+          x = 10,
+          y = [[value]]
+        )
+      </item>
+    </dict>
+  </dicts>
+
+  <eval>
+    <expression>@{SIZE 4 +}</expression>
+
+    <expression>@{SIZE 4 + 2 * 3 max() 7 mod()}</expression>
+
+    <expression>@{3 5 max()}</expression>
+
+    <expression>@{10 2 - 3 *}</expression>
+  </eval>
+</config>
+
+
