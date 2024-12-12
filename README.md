@@ -109,11 +109,11 @@ py Transit.py <входной файл>.xml
 
 В один файл все запихнул, вот как оно выглядит
 
-![image](https://github.com/user-attachments/assets/c6e6b86c-6394-447c-bc18-ff2c04b8bedc)
+![image](https://github.com/user-attachments/assets/6c44bc30-316d-40b5-9916-aaf83b3ba33f)
 
 И вот выход 
 
-![image](https://github.com/user-attachments/assets/7350557e-6b47-4169-9f28-24878d853d4a)
+![image](https://github.com/user-attachments/assets/f6c63418-75b9-4582-806b-0af5054bb0b3)
 
 Юниттест
 
