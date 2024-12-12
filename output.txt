@@ -1,25 +1,20 @@
 <!--
+ 
   Многострочный комментарий 
   на самом верху
+ 
 -->
 || Однострочный комментарий о конфигурации
 || комментарий внутри словаря
+<!--
+ Пример элемента словаря со значением-выражением 
+-->
 96 -> SIZE
 [[Привет, мир!]] -> GREETING
 [[]] -> EMPTY_STR
-dict(
-        outer = dict(
-          inner = dict(
-            val1 = 1,
-            val2 = [[тест]]
-          )
-        )
-      ) -> NESTED_DICT
-dict( a = 1, b = 2, greet = [[Здравствуйте]] ) -> mydict
-dict( str_val = [[тут строка]], num_val = 42, nested = dict(
-          x = 10,
-          y = [[value]]
-        ) ) -> complex_dict
+dict( outer = dict( inner = dict( val1 = 1, val2 = [[тест]] ) ) ) -> NESTED_DICT
+dict( a = 1, b = 2, greet = [[Здравствуйте]], computed = 960 ) -> mydict
+dict( str_val = [[тут строка]], num_val = 42, nested = dict( x = 10, y = [[value]] ) ) -> complex_dict
 100
 4
 5

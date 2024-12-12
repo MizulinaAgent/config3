@@ -34,7 +34,7 @@ def extract_constants(root):
     return constants
 
 
-def extract_dicts(root):
+def extract_dicts(root, constants):
     dicts = {}
     dicts_section = root.find('dicts')
     if dicts_section is not None:
@@ -50,6 +50,9 @@ def extract_dicts(root):
                 if not key:
                     sys.stderr.write("Элемент без ключа.\n")
                     sys.exit(1)
+                # Проверяем, является ли значение выражением
+                if val.startswith("@{"):
+                    val = str(evaluate_expression(val, constants))
                 items.append((key, val))
             dicts[name] = items
     return dicts
@@ -143,7 +146,7 @@ def main():
     traverse_and_collect(root, comment_lines)
 
     constants = extract_constants(root)
-    dicts = extract_dicts(root)
+    dicts = extract_dicts(root, constants)
 
     output_lines = []
     for line in comment_lines:
