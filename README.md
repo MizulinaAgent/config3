@@ -111,7 +111,7 @@ py Transit.py <входной файл>.xml
 
 ![image](https://github.com/user-attachments/assets/c6e6b86c-6394-447c-bc18-ff2c04b8bedc)
 
-И вот аутпут 
+И вот выход 
 
 ![image](https://github.com/user-attachments/assets/7350557e-6b47-4169-9f28-24878d853d4a)
 
